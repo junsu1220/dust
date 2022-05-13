@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## 프로젝트 주제 선정
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+우리나라는 매일 미세먼지로 인해 고통을 받고 있다.
 
-## Available Scripts
+특히 미세먼지는 육안으로는 잘 확인할 수 없다.
 
-In the project directory, you can run:
+이에 사용자의 위치를 파악하고 openAPI를 이용해
 
-### `yarn start`
+그 지역의 미세먼지 측정량을 알려주는 웹 서비스를 만들고자 한다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 기술
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+코어: javascript
+스타일링: scss
+패키지 매니저: Yarn
+빌드: Webpack, Babel
+테스트: jest
 
-### `yarn test`
+배포: netlify
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 기능
 
-### `yarn build`
+### 스토리
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 스토리1
+  - 실내에서 환기를 시키거나, 실외로 나가야하는 고객이,
+  - 현재 자기위치의 (초)미세먼지 농도를 한눈에 알기 위해,
+  - 웹사이트에 들어온다.
+- 스토리2
+  - 다른 지역에 가야하는 고객이,
+  - 다른 지역의 (초)미세먼지 농도를 알기 위해,
+  - 웹에서 다른 지역을 검색한다.
+- 스토리3
+  - 다른 날짜의 (초)미세먼지 농도를 알고 싶은 고객이,
+  - 다른 날짜의 (초)미세먼지 농도를 알기 위해,
+  - 웹에서 다른 날짜를 검색한다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 테스크
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 스토리1의 Task
+  - 한눈에 알기 쉬운 UI/UX → adobe XD
+  - 고객의 현재위치 얻기 → navigator 객체에 geolocation 속성이용
+  - (초)미세먼지 농도 정보 제공 → open API 활용
+- 스토리2의 Task
 
-### `yarn eject`
+  - 검색하여 데이터정립 → ㅇ
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  [[JavaScript] 검색 기능 만들기 [펌]](https://yoonjong-park.tistory.com/entry/JavaScript-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%8E%8C)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - 검색데이터를 위치로 바꾸어 (초)미세먼지 농도 정보 제공 → open API 활용
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 스토리 3의 Task
+  - 버튼을 누를 시 내일 혹은 모레까지 농도를 알 수 있게 하기 → open API 활용
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 일정
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 5/9 ~ 5/22
