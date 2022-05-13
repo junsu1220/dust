@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/proxyserver/node_modules
+
 /.pnp
 .pnp.js
 
@@ -11,7 +13,11 @@
 # production
 /build
 
+# 인증 키
+/proxyserver/config/key.js
+
 # misc
+seoulData.js
 .DS_Store
 .env.local
 .env.development.local
